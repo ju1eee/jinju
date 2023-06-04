@@ -1,0 +1,96 @@
+/* header 부분 */
+header {
+    position: relative;
+    padding: 25px 30px;
+    background-color: #29313A;
+    z-index:100000;
+}
+
+nav h1 {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    position:absolute;
+    margin-top:-10px;
+}
+
+#gnb {
+    display: block !important;
+    position: static;
+    float: right;
+    width: auto;
+    color:#fff;
+}
+
+#gnb li {
+    float: left;
+    margin-left: 20px;
+    border-bottom: 0;
+}
+
+#gnb li a {
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    content: '';
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #0664A4;
+    position:relative;
+}
+
+footer h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer-list{
+    display:flex;
+    margin-left:10px;
+    color:#fff;
+}
+
+.footer-list li{
+    margin-left:10px;
+}
+
+footer p{
+    margin-left:20px;
+    margin-top:10px;
+    color:#fff;
+    line-height:1.5;
+}
+
+
+
+@media all and (min-width:768px) {
+    #gnb li a {
+        font-size: 14px;
+    }
+
+    #gnb li {
+        margin-left: 30px;
+    }
+}
+
+
+@media all and (min-width:1024px) {
+    #gnb li a {
+        font-size: 16px;
+    }
+
+    #gnb li {
+        margin-left: 40px;
+    }
+}
+
+

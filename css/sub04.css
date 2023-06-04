@@ -1,0 +1,123 @@
+/* 휴대폰 버전 */
+@media all and (min-width:390px){
+    #image-section{
+        width:100%;
+        height:40%;
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.5) 100%);
+        position:absolute;
+        position:sticky;
+    }
+    
+    #image-section img{
+        width:100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(0.8);
+        top:0;
+        left:0;
+    }
+    
+    .clear{
+        clear:both;
+    }
+    
+    #menu-section{
+        position:relative;
+        width:100%;
+        height:40%;
+        background:#A1CFFF;
+    }
+    
+    .menu-gnb{
+        position:sticky;
+        padding-top:1rem;
+        padding-bottom:2rem;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center; /* 중앙 정렬을 위해 추가 */
+        margin-left: auto; /* 왼쪽 여백을 제거하기 위해 수정 */
+        margin-right: auto; /* 오른쪽 여백을 제거하기 위해 수정 */
+    
+    }
+    
+    .menu-gnb > li{
+        font-size:1rem;
+        padding:0.8rem;
+        background:#fff;
+        border-radius: 2rem;
+        margin-top:1rem;
+        margin-left:0.8rem;
+        text-align:center;
+        object-position: center;
+        font-weight:600;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .menu-gnb > li:hover{
+        background:#0664A4;
+        color:#fff;
+    }
+
+    #main-section{
+        position:relative;
+        background:#BEE6FF;
+    }
+
+    #main-section img{
+        width:80%;
+        margin-left:9%;
+        margin-top:10%;
+    }
+
+    .main-section-txt{
+        background-color:#BEE6FF;
+        width:55%;
+        height:100%;
+        position:relative;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+        padding:10% 5% 20% 5%;
+        margin:-20% 0 0 16%;
+        line-height:1.5;
+    }
+
+    #main-section h1{
+        justify-content: center;
+        align-items: center;
+        font-size:2rem;
+        font-weight:600;
+        text-align:center;
+        padding-top:2rem;
+    }
+
+}
+
+
+/* 태블릿용 css */
+@media all and (min-width:1024px){
+
+    #main-section img{
+        margin-top:5%;
+    }
+
+
+    .main-section-txt{
+        font-size:20px;
+    }
+}
+
+
+/* PC용 css */
+@media all and (min-width:1280px){
+
+    #main-section img{
+        margin-top:5%;
+    }
+
+
+    .main-section-txt{
+        font-size:25px;
+    }
+}
+

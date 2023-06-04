@@ -1,0 +1,409 @@
+/* 모바일용 css */
+
+/* 메인섹션 부분 */
+
+@media all and (min-width:390px){
+
+    body {
+        overflow-x:hidden;
+    }
+
+    
+    #image-section{
+        width:100%;
+        height:40%;
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.5) 100%);
+        position:absolute;
+        position:sticky;
+    }
+    
+    #image-section img{
+        width:100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(0.8);
+        top:0;
+        left:0;
+    }
+
+    @keyframes slidy {
+        0% { left: 0%; }
+        20% { left: 0%; }
+        25% { left: -100%; }
+        45% { left: -100%; }
+        50% { left: -200%; }
+        70% { left: -200%; }
+        75% { left: -300%; }
+        95% { left: -300%; }
+        100% { left: -400%; }
+        }
+         
+        #image-section { width:100%; overflow: hidden; }
+        #image-section div img { width: 20%; float: left; }
+        #image-section div { 
+          position: relative;
+          width: 500%;
+          margin: 0;
+          top:0;
+          left: 0;
+          text-align: left;
+          font-size: 0;
+          -webkit-animation: 20s slidy ease-in-out infinite;
+          animation: 20s slidy ease-in-out infinite; 
+          
+        }
+    
+
+
+
+/* 프로모션 부분 */
+#promotion {
+    width: 100%;
+    position: static;
+    padding: 30px 0;
+    margin:0;
+    background-color: #5487A4;
+}
+
+.pro-img{
+    position:absolute;
+}
+
+
+/* 임시용 */
+#promotion h1 {
+    text-align: center;
+    color:#fff;
+    font-size:1rem;
+    font-weight:600;
+    margin-top:1%;
+}
+
+#promotion p {
+    text-align: center;
+    font-size:0.5rem;
+    color:#fff;
+    line-height:1.2;
+    margin-top:2%;
+}
+
+.pro-img img{
+    float:left;
+    margin-top:-30px;
+    margin-left:20px;
+}
+
+.yellow-btn{
+    width:15%;
+    height: 10%;
+    background:#FEB954;
+    border-radius:30px;
+    padding:15px;
+    text-align:center;
+    color:#fff;
+    float:right;
+    margin-top:-50px;
+    margin-right:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+
+/* 컨텐츠 부분 */
+
+#contents-box {
+    width: 100%;
+    position: static;
+    height: 800px;
+    background-color: #BEE6FF;
+}
+
+.contents-caption {
+    padding: 20px 0;
+}
+
+.contents-background {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #BEE6FF 100%);
+    position: absolute;
+}
+
+#content div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#content div:first-child {
+    background: #72D6EE;
+    flex-direction: column;
+}
+
+#content div:nth-of-type(2) {
+    background: #A1CFFF;
+    flex-direction: column;
+}
+
+#content div:nth-of-type(3) {
+    background: #349EEE;
+    flex-direction: column;
+}
+
+div#button {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 160px;
+    height: 45px;
+    margin: 25px auto 0;
+    border-radius: 30px;
+    border: 1px solid #565656;
+    color: #313131;
+    line-height: 43px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#content h3 {
+    display: block;
+    line-height: 1;
+    color: #000;
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    padding: 30px 0 0;
+}
+
+#content p {
+    display: block;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.content-last h3{
+    color:#fff !important;
+}
+
+.content-last p{
+    color:#fff !important;
+}
+
+
+
+.white {
+    color: #fff !important;
+}
+
+.button-white {
+    border: 1px solid rgba(255, 255, 255, .3) !important;
+    color: rgba(255, 255, 255, .6) !important;
+}
+
+.icon-list li {
+    display: list-item;
+    float: left;
+    width: 20%;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sphere {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #4A64F5;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+.sphere img{
+    width:30px;
+    margin-top:7px;
+}
+
+}
+
+
+/* 태블릿용 css */
+@media all and (min-width:1024px) {
+    /* 메인섹션 부분 */
+
+    #image-section img{
+        width:100%;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(0.8);
+        top:0;
+        left:0;
+    }
+
+    /* #content div:first-child{
+        background:red;
+    } */
+
+    #content {
+        width: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        margin-left: 5%;
+    }
+
+
+    #content div {
+        height: 450px;
+        width: 30%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    #content div h3{
+        margin-top:20%;
+    }
+
+    div#button {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        width: 160px;
+        height: 45px;
+        margin: 25px auto 0;
+        border-radius: 30px;
+        border: 1px solid #565656;
+        color: #313131;
+        line-height: 43px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    .icon-list li {
+        display: list-item;
+        width: 20%;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .sphere {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 10px;
+    }
+
+    em {
+        margin-top: 5%;
+    }
+
+    #promotion h1 {
+        text-align: center;
+        color:#fff;
+        font-size:1.3rem;
+        font-weight:600;
+        margin-top:1%;
+    }
+    
+    #promotion p {
+        text-align: center;
+        font-size:1rem;
+        color:#fff;
+        line-height:1.2;
+        margin-top:2%;
+    }
+
+    .pro-img img{
+        width:150px;
+        float:left;
+        margin-top:-30px;
+        margin-left:120px;
+    }
+
+    .yellow-btn{
+        width:12%;
+        height: 10%;
+        background:#FEB954;
+        border-radius:50px;
+        padding:15px;
+        text-align:center;
+        color:#fff;
+        float:right;
+        margin-top:-70px;
+        margin-right:100px;
+        cursor:pointer;
+    }
+
+    .sphere img{
+        width:48px;
+        margin-top:10px;
+    }
+    
+
+}
+
+/* PC용 css */
+@media all and (min-width:1280px) {
+    /* 메인섹션 부분 */
+
+    #main {
+        height: 400px;
+    }
+
+    .icon-list li {
+        width: 20%;
+        height: 50px;
+        margin-top: 70px;
+    }
+
+    #content div {
+        margin-top: 5%;
+    }
+
+    #content div h3{
+        margin-top:20%;
+        font-size:2.8rem;
+        font-weight:600;
+    }
+
+    .sphere {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 15px;
+    }
+
+    .pro-img img{
+        width:180px;
+        float:left;
+        margin-top:-40px;
+        margin-left:200px;
+    }
+
+    .yellow-btn{
+        width:12%;
+        height: 10%;
+        background:#FEB954;
+        border-radius:50px;
+        padding:15px;
+        text-align:center;
+        color:#fff;
+        float:right;
+        margin-top:-70px;
+        margin-right:180px;
+        cursor:pointer;
+    }
+
+    .sphere img{
+        margin-top:15px;
+    }
+
+
+}
