@@ -136,7 +136,7 @@
     width: 80%;
     margin-left: 10%;
     position: relative;
-    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 #content div:first-child {
@@ -169,6 +169,42 @@ div#button {
     text-align: center;
     font-size: 14px;
 }
+#button span{
+    z-index:1;
+    position:relative;
+}
+
+#button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: linear-gradient(180deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    
+  }
+  
+  #button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+
+  #button:hover{
+    border:0.5px solid #fff;
+    color:#fff;
+  }
+
+  .button-white:hover{
+    border:0.5px solid #000 !important;
+    color:#000 !important;
+  }
+
+
 
 #content h3 {
     display: block;
