@@ -104,6 +104,10 @@ footer p{
     #gnb li {
         margin-left: 40px;
     }
+
+    header {
+        padding-bottom:35px;
+    }
 }
 
 
